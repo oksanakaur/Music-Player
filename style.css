@@ -39,3 +39,28 @@ body{
     border-radius: 20px;
     cursor: pointer;
 }
+
+.container .song-info .fill-bar {
+    width: 0;
+    height: 6px;
+    border-radius: 20px;
+    background: #1db954;
+    margin: 10px 0;
+}
+
+.container .song-info .time {
+    font-size: 15px;
+    color: #b9b9b9;
+    margin: 10px 0;
+}
+
+.container .disk .active {
+    animation: rotate 3s linear 0s infinite forwards;
+}
+
+.container .disk .cover {
+    width: 145px;
+    height: 145px;
+    position: absolute;
+    
+}
