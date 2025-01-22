@@ -40,25 +40,28 @@ body{
     cursor: pointer;
 }
 
-.container .song-info .fill-bar {
+.container .song-info .progress-bar .fill-bar{
     width: 0;
     height: 6px;
     border-radius: 20px;
     background: #1db954;
-    margin: 10px 0;
 }
 
-.container .song-info .time {
+.container .song-info .time{
     font-size: 15px;
     color: #b9b9b9;
     margin: 10px 0;
 }
 
-.container .disk .active {
+.container .disk{
+    max-width: 120px;
+}
+
+.container .disk .active{
     animation: rotate 3s linear 0s infinite forwards;
 }
 
-.container .disk .cover {
+.container .disk .cover{
     width: 145px;
     height: 145px;
     position: absolute;
@@ -74,18 +77,18 @@ body{
     transition: all 0.2s ease-in-out;
 }
 
-.container .disk .circle {
+.container .disk .circle{
     position: absolute;
     width: 30px;
     height: 30px;
-    left: 15px;
-    top: 29px;
+    left: 15%;
+    top: 29%;
     background-color: #fff;
     z-index: 1;
     border-radius: 50%;
 }
 
-.container .controls {
+.container .controls{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,7 +101,20 @@ body{
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
-.container .controls #play {
+.container .controls #play{
+    background-color: #1db954;
+    color: #fff;
+    padding: 15px 17px 14px 18px;
+    font-size: 28px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.container .controls #play:hover{
+    background: #189945;
+}
+
+.container .controls i{
     padding: 30px 8px;
     font-size: 35px;
     cursor: pointer;
@@ -106,7 +122,15 @@ body{
     transition: all 0.3s ease;
 }
 
-.container .controls #play:hover {
-    background: #189945;
+.container .controls i:hover{
+    color: #fff;
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
