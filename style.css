@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body {
+body{
     background-color: #ddd;
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -10,21 +10,32 @@ body {
     height: 100vh;
 }
 
-.container {
-    position: relatve;
+.container{
+    position: relative;
     padding: 10px;
 }
 
-.container .song-info {
+.container .song-info{
     background-color: #000;
     margin: 0 15px;
     padding: 15px 15px 5px 150px;
     border-radius: 15px 15px 0 0;
 }
 
-.container .song-info .song-name {
+.container .song-info .song-name{
     color: #b9b9b9;
     font-size: 14px;
     margin: 3px 0 20px;
 }
 
+.container .song-info .artist-name{
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container .song-info .progress-bar{
+    background-color: #505050;
+    border-radius: 20px;
+    cursor: pointer;
+}
